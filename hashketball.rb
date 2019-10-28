@@ -132,7 +132,6 @@ def num_points_scored(name)
     team_level_stats.map do |team_level_keys, team_level_values|
      if team_level_keys == :players
       team_level_values.map do |player|
-        binding.pry
         if player[:player_name] == name
           return player[:points]
         end
