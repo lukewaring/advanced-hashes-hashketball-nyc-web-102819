@@ -129,9 +129,7 @@ end
 
 def num_points_scored(name)
   game_hash.map do |team, team_level_stats|
-    binding.pry
     team_level_stats.map do |team_level_keys, team_level_values|
-      binding.pry
      if team_level_keys == :players
       team_level_values.map do |player|
         binding.pry
